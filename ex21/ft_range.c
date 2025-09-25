@@ -30,6 +30,7 @@ int	*ft_range(int min, int max)
 	srcn[i] = '\0';
 	return(srcn);
 }
+/*
 #include <stdio.h>
 
 int main() {
@@ -49,3 +50,4 @@ int main() {
     free(num);
     return 0;
 }
+*/

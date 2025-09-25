@@ -9,11 +9,13 @@
 /*   Updated: 2025/09/25 11:49:58 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
 #include <unistd.h>
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+*/
 int	main(int argc, char **argv)
 {
 	int	i;
