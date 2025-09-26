@@ -6,15 +6,16 @@
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 12:08:52 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/25 12:16:19 by gabde-so         ###   ########.fr       */
+/*   Updated: 2025/09/26 11:14:47 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
 char	*ft_strdup(char *src)
 {
-	char *new_src;
-	int size_src;
+	char	*new_src;
+	int		size_src;
 
 	size_src = 0;
 	while (src[size_src])
@@ -27,7 +28,7 @@ char	*ft_strdup(char *src)
 		size_src++;
 	}
 	new_src[size_src] = '\0';
-	return(new_src);
+	return (new_src);
 }
 /*
 #include <stdio.h>

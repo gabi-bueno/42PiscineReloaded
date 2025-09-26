@@ -1,36 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/26 11:07:17 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/26 11:08:14 by gabde-so         ###   ########.fr       */
+/*   Created: 2025/09/26 11:34:12 by gabde-so          #+#    #+#             */
+/*   Updated: 2025/09/26 11:37:43 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
-{
-	int	sr;
+#ifndef FT_ABS_H
+#define FT_ABS_H
 
-	sr = 1;
-	while ((sr * sr) < nb)
-		sr++;
-	if ((sr * sr) != nb)
-		return (0);
-	else
-		return (sr);
-}
-/*
-#include <stdio.h>
-int	main()
-{
-	int r;
+#define ABS(Value) ((Value * (Value >= 0) * ((Value >= 0) - (Value > 0)))
 
-	r = ft_sqrt(16);
-
-	printf("%d", r);
-	return (0);
-}
-*/
+#endif

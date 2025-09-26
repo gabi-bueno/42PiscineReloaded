@@ -6,33 +6,34 @@
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 12:33:53 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/25 13:03:43 by gabde-so         ###   ########.fr       */
+/*   Updated: 2025/09/26 11:18:01 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
+
 int	*ft_range(int min, int max)
 {
 	int	*srcn;
 	int	i;
 	int	size;
 
-	if(min > max)
+	if (min > max)
 		return (NULL);
 	size = max - min;
-	srcn = (int *) malloc (sizeof(int) * (size + 2));//fazer a condicao se nao conter nada voltar nulo
+	srcn = (int *) malloc (sizeof(int) * (size + 2));
 	i = 0;
-	while(max >= min)
+	while (max >= min)
 	{
 		srcn[i] = min;
 		min++;
 		i++;
 	}
 	srcn[i] = '\0';
-	return(srcn);
+	return (srcn);
 }
 /*
 #include <stdio.h>
-
+//fazer condicao de se malloc nao der certo retornar nullo
 int main() {
     int i = 0;
     int *num = ft_range(9, 10);
