@@ -6,16 +6,17 @@
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 11:12:16 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/26 11:12:51 by gabde-so         ###   ########.fr       */
+/*   Updated: 2025/09/29 11:29:05 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <unistd.h>
-void ft_putchar (char c)
+#include <unistd.h>
+
+void	ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }
-*/
+
 int	ft_strcmp(char *s1, char *s2) // compara duas strs
 {
 	while (*s1 != '\0' && *s2 != '\0')

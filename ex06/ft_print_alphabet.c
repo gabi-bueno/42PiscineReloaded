@@ -6,17 +6,20 @@
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 10:58:25 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/26 10:59:05 by gabde-so         ###   ########.fr       */
+/*   Updated: 2025/09/29 12:31:24 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <unistd.h>
+#include <unistd.h>
 
+/*
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 */
+void	ft_putchar(char c);
+
 void	ft_print_alphabet(void)
 {
 	char	alphabet;

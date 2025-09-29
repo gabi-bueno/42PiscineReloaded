@@ -6,18 +6,17 @@
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 10:59:39 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/26 10:59:47 by gabde-so         ###   ########.fr       */
+/*   Updated: 2025/09/29 11:23:49 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include <unistd.h>
 
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-*/
+
 void	ft_print_numbers(void)
 {
 	char	numbers;
