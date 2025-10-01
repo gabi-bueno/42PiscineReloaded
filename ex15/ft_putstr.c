@@ -6,15 +6,11 @@
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 11:08:42 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/29 11:25:56 by gabde-so         ###   ########.fr       */
+/*   Updated: 2025/10/01 01:59:41 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -27,9 +23,3 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
-/*
-int	main(void)
-{
-	ft_putstr("Oi");
-	return (0);
-}*/

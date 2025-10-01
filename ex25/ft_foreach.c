@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gabde-so <gabde-so@student.42barcelona.co  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/01 02:22:33 by gabde-so          #+#    #+#             */
+/*   Updated: 2025/10/01 02:25:52 by gabde-so         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	ft_foreach(int *tab, int length, void (*f)(int));
 
-void    ft_foreach(int *tab, int length, void (*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int	i;
 
 	i = 0;
-	while(i < length)
+	while (i < length)
 	{
 		f(tab[i]);
 		i++;

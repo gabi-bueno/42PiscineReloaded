@@ -6,7 +6,7 @@
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 12:33:53 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/26 11:18:01 by gabde-so         ###   ########.fr       */
+/*   Updated: 2025/10/01 02:18:48 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -17,38 +17,42 @@ int	*ft_range(int min, int max)
 	int	i;
 	int	size;
 
-	if (min > max)
+	if (min >= max)
 		return (NULL);
 	size = max - min;
-	srcn = (int *) malloc (sizeof(int) * (size + 2));
+	srcn = (int *) malloc (sizeof(int) * size);
+	if (!srcn)
+		return (NULL);
 	i = 0;
-	while (max >= min)
+	while (i < size)
 	{
-		srcn[i] = min;
-		min++;
+		srcn[i] = min + i;
 		i++;
 	}
-	srcn[i] = '\0';
 	return (srcn);
 }
-/*
-#include <stdio.h>
-//fazer condicao de se malloc nao der certo retornar nullo
-int main() {
-    int i = 0;
-    int *num = ft_range(9, 10);
+/*#include <stdio.h>
+int main(void)
+{
+	int *num;
+	int min = 9;
+	int max = 15;
+	int size = max - min;
+	int i;
 
-    if(num == NULL)
-    {
-    	printf("Numero minimo maior que o maximo");
-	return 0;
-    }
-    while (num[i])
-    {
-        printf("%d, ", num[i]);
-        i++;
-    }
-    free(num);
-    return 0;
-}
-*/
+	num = ft_range(min, max);
+	if (num == NULL)
+	{
+		printf("Numero minimo maior ou igual ao maximo\n");
+		return (0);
+	}
+	i = 0;
+	while (i < size)
+	{
+		printf("%d, ", num[i]);
+		i++;
+	}
+	printf("\n");
+	free(num);
+	return (0);
+}*/

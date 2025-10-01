@@ -6,13 +6,12 @@
 /*   By: gabde-so <gabde-so@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 10:58:25 by gabde-so          #+#    #+#             */
-/*   Updated: 2025/09/29 12:31:24 by gabde-so         ###   ########.fr       */
+/*   Updated: 2025/10/01 01:44:13 by gabde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <unistd.h>
 
-/*
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
